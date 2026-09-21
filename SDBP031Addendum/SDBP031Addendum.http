@@ -1,0 +1,6 @@
+@SDBP031Addendum_HostAddress = http://localhost:5048
+
+GET {{SDBP031Addendum_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
