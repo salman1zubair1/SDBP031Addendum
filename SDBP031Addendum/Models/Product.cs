@@ -1,4 +1,4 @@
-﻿namespace SDBP031Addendum.Model
+﻿namespace SDBP031Addendum.Models
 {
 
     public class Product
