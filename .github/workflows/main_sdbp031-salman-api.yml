@@ -24,10 +24,10 @@ jobs:
           dotnet-version: '10.x'
 
       - name: Build with dotnet
-        run: dotnet build SDBP031Addendum/SDBP031Addendum.slnx --configuration Release
+        run: dotnet build SDBP031Addendum.slnx --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish SDBP031Addendum/SDBP031Addendum.slnx -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish SDBP031Addendum.slnx -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
