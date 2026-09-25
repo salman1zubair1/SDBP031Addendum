@@ -59,7 +59,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'sdbp031-salman-api'
-          slot-name: 'Production'
-          package: .
+          app-name: 'sdbp031-salman-api' 
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1AD5B7FFFC84B3C8E619319B6378D85 }}
+          package: '${{Package.CurrentValue}}myapp'
           
