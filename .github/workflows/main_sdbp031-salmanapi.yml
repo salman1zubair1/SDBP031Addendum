@@ -50,6 +50,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'sdbp031-salmanapi'
-          slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1AD5B7FFFC84B3C8E619319B6378D85 }}
